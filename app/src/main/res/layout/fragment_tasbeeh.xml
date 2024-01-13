@@ -33,7 +33,7 @@
         android:id="@+id/tsbehatCountTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/rectangular_background"
         android:padding="22dp"
         android:text="0"
