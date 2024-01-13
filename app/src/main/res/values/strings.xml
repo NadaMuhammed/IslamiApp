@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">IslamiApp</string>
+    <string name="islami">إسلامي</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="radio">الراديو</string>
+    <string name="tasbeh">التسبيح</string>
+    <string name="ahadeth">أحادايث</string>
+    <string name="quran">القرآن</string>
+    <string name="sora_name">اسم السورة</string>
+    <string name="number_of_ayats">عدد الآيات</string>
+    <string name="number_of_tsbehat">عدد التسبيحات</string>
+</resources>

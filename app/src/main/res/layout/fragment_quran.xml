@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuranFragment">
+
+    <ImageView
+        android:id="@+id/quranImv"
+        android:layout_width="205dp"
+        android:layout_height="227dp"
+        android:src="@drawable/mosque"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="68dp"/>
+
+    <View
+        android:id="@+id/verticalLine"
+        android:layout_width="3dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="13dp"
+        android:background="#B7935F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quranImv" />
+
+    <View
+        android:id="@+id/horizontalLine1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="13dp"
+        android:background="#B7935F"
+        app:layout_constraintTop_toBottomOf="@id/quranImv" />
+
+    <View
+        android:id="@+id/horizontalLine2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="50dp"
+        android:background="#B7935F"
+        app:layout_constraintTop_toBottomOf="@id/horizontalLine1" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/sora_name"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/horizontalLine2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/verticalLine"
+        app:layout_constraintTop_toTopOf="@id/horizontalLine1" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/number_of_ayats"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/horizontalLine2"
+        app:layout_constraintEnd_toStartOf="@id/verticalLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/horizontalLine1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/suraRv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/verticalLine"
+        app:layout_constraintTop_toBottomOf="@id/horizontalLine2"
+        tools:listitem="@layout/recyclerview_item"
+        android:layout_marginBottom="72dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ayatRv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/verticalLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontalLine2"
+        tools:listitem="@layout/recyclerview_item"
+        android:layout_marginBottom="72dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
