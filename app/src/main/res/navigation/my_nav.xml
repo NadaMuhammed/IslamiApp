@@ -3,26 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
-    app:startDestination="@id/radioFragment">
+    app:startDestination="@id/radioFragmentItem">
 
     <fragment
         android:id="@+id/quranFragment"
-        android:name="com.example.islamiapp.QuranFragment"
+        android:name="com.example.islamiapp.home.screens.QuranFragment"
         android:label="fragment_quran"
         tools:layout="@layout/fragment_quran" />
     <fragment
         android:id="@+id/tasbeehFragment"
-        android:name="com.example.islamiapp.TasbeehFragment"
+        android:name="com.example.islamiapp.home.screens.TasbeehFragment"
         android:label="fragment_tasbeeh"
         tools:layout="@layout/fragment_tasbeeh" />
     <fragment
-        android:id="@+id/radioFragment"
-        android:name="com.example.islamiapp.RadioFragment"
+        android:id="@+id/radioFragmentItem"
+        android:name="com.example.islamiapp.home.screens.RadioFragment"
         android:label="fragment_radio"
         tools:layout="@layout/fragment_radio" />
     <fragment
         android:id="@+id/ahadethFragment"
-        android:name="com.example.islamiapp.AhadethFragment"
+        android:name="com.example.islamiapp.home.screens.AhadethFragment"
         android:label="fragment_ahadeth"
         tools:layout="@layout/fragment_ahadeth" />
 </navigation>

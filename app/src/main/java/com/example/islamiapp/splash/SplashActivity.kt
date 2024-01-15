@@ -1,9 +1,11 @@
-package com.example.islamiapp
+package com.example.islamiapp.splash
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.example.islamiapp.home.HomeActivity
+import com.example.islamiapp.R
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
