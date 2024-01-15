@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home.screens.AhadethFragment">
+    tools:context=".home.screens.hadeth.AhadethFragment">
 
     <ImageView
         android:id="@+id/ahadethImv"
@@ -30,6 +30,7 @@
         android:layout_marginTop="10dp"
         android:fontFamily="@font/elmessiri"
         android:text="@string/the_ahadeth"
+        android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,5 +52,5 @@
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/horizontalLine2"
-        tools:listitem="@layout/recyclerview_item" />
+        tools:listitem="@layout/hadeeth_item" />
 </androidx.constraintlayout.widget.ConstraintLayout>

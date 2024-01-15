@@ -5,8 +5,8 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.islamiapp.R
 import com.example.islamiapp.databinding.ActivityHomeBinding
-import com.example.islamiapp.home.screens.AhadethFragment
-import com.example.islamiapp.home.screens.QuranFragment
+import com.example.islamiapp.home.screens.hadeth.AhadethFragment
+import com.example.islamiapp.home.screens.quran.QuranFragment
 import com.example.islamiapp.home.screens.RadioFragment
 import com.example.islamiapp.home.screens.TasbeehFragment
 

@@ -5,4 +5,6 @@ object Constants {
     final val ALHAMDULELLAH = "الحمدلله"
     final val LA_ELLAH_ELA_ALLAH = "لا اله الا الله"
     final val ALLAH_AKBAR = "الله اكبر"
+    final val SURAT_AL_BAQARA = "البقرة"
+    final val HADEETH_NUMBER = "الحديث رقم "
 }

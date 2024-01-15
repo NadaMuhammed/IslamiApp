@@ -20,6 +20,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/elmessiri"
         android:text="@string/holy_quran_radio"
+        android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@id/radioImv"
         android:layout_marginTop="40dp"
         app:layout_constraintStart_toStartOf="parent"
