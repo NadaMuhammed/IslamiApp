@@ -9,6 +9,8 @@ import com.example.islamiapp.R
 
 class QuranAdapter(val quranList: ArrayList<Quran>) :
     RecyclerView.Adapter<QuranAdapter.ViewHolder>() {
+    var onQuranClick: OnQuranClick? = null
+
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val suraTv = itemView.findViewById<TextView>(R.id.suraTv)
         val ayatTv = itemView.findViewById<TextView>(R.id.ayatTv)
@@ -25,5 +27,12 @@ class QuranAdapter(val quranList: ArrayList<Quran>) :
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.suraTv.text = quranList[position].suraName
         holder.ayatTv.text = quranList[position].ayatNumber.toString()
+        holder.itemView.setOnClickListener {
+            onQuranClick?.onQuranClick(quranList.get(position), position)
+        }
+    }
+
+    interface OnQuranClick {
+        fun onQuranClick(quran:Quran, index:Int)
     }
 }

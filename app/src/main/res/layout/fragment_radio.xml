@@ -12,7 +12,8 @@
         android:layout_height="222dp"
         android:src="@drawable/radio_logo"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="200dp"/>
+        android:layout_marginTop="200dp"
+        />
 
     <TextView
         android:id="@+id/holyQuranRadioTv"
@@ -20,7 +21,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/elmessiri"
         android:text="@string/holy_quran_radio"
-        android:textColor="@color/black"
+        android:textColor="@color/home_text_color"
         app:layout_constraintTop_toBottomOf="@id/radioImv"
         android:layout_marginTop="40dp"
         app:layout_constraintStart_toStartOf="parent"

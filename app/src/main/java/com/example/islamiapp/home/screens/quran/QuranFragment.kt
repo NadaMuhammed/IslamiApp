@@ -1,13 +1,15 @@
 package com.example.islamiapp.home.screens.quran
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.islamiapp.Constants
+import com.example.islamiapp.R
 import com.example.islamiapp.databinding.FragmentQuranBinding
-import com.example.islamiapp.home.screens.hadeth.HadeethAdapter
 
 class QuranFragment : Fragment() {
     lateinit var binding: FragmentQuranBinding
@@ -28,11 +30,21 @@ class QuranFragment : Fragment() {
         fillLists()
         quranAdapter = QuranAdapter(quranArrayList)
         binding.suraRv.adapter = quranAdapter
+        quranAdapter.onQuranClick = object : QuranAdapter.OnQuranClick {
+            override fun onQuranClick(quran: Quran, index: Int) {
+                val intent = Intent(activity, QuranDetailsActivity::class.java)
+                intent.putExtra(Constants.QURAN,quran)
+                intent.putExtra(Constants.FILE_NAME,"${index+1}.txt")
+                startActivity(intent)
+            }
+        }
+
     }
 
     fun fillLists() {
-        for (item in 1..11) {
-            quranArrayList.add(Quran(Constants.SURAT_AL_BAQARA, 285))
+        for (sura in 0..<Constants.SURAHS_NAMES.size){
+            quranArrayList.add(Quran(Constants.SURAHS_NAMES.get(sura), Constants.AYAT_NUMBERS.get(sura)))
         }
+
     }
 }

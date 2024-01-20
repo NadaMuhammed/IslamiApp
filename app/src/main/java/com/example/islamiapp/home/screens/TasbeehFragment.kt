@@ -13,7 +13,7 @@ import com.example.islamiapp.databinding.FragmentTasbeehBinding
 
 class TasbeehFragment : Fragment() {
     lateinit var binding: FragmentTasbeehBinding
-    var tasbeehCnt = 0
+    var tasbeehCnt: Int = 0
     var tasbeehCompleted = 1
     var angleCnt = 10f
     override fun onCreateView(
@@ -27,6 +27,9 @@ class TasbeehFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        tasbeehCnt = 0
+        angleCnt = 10f
+        tasbeehCompleted = 1
         binding.tasbeehBtn.setOnClickListener {
             addCounter()
         }
@@ -42,7 +45,7 @@ class TasbeehFragment : Fragment() {
 
     fun rotateSebha(angle: Float) {
         binding.sebhaImv.animate().rotation(angle)
-        angleCnt+=10
+        angleCnt += 10
     }
 
     private fun changeTasbeeh() {

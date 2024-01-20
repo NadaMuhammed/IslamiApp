@@ -20,7 +20,7 @@
         android:id="@+id/horizontalLine1"
         android:layout_width="match_parent"
         android:layout_height="3dp"
-        android:background="@color/silken_chocolate_color"
+        android:background="?colorSecondary"
         app:layout_constraintTop_toBottomOf="@id/ahadethImv" />
 
     <TextView
@@ -30,7 +30,7 @@
         android:layout_marginTop="10dp"
         android:fontFamily="@font/elmessiri"
         android:text="@string/the_ahadeth"
-        android:textColor="@color/black"
+        android:textColor="@color/home_text_color"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,7 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:layout_marginTop="10dp"
-        android:background="@color/silken_chocolate_color"
+        android:background="?colorSecondary"
         app:layout_constraintTop_toBottomOf="@id/ahadethTv" />
 
     <androidx.recyclerview.widget.RecyclerView

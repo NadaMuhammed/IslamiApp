@@ -2,7 +2,10 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.IslamiApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-         <item name="colorPrimary">@color/light_black</item>
+        <item name="android:statusBarColor">@color/light_beige</item>
+        <item name="colorPrimary">@color/light_black</item>
+        <item name="colorSecondary">@color/silken_chocolate_color</item>
+        <item name="background">@color/silken_chocolate_color</item>
     </style>
 
     <style name="Theme.IslamiApp" parent="Base.Theme.IslamiApp" />
