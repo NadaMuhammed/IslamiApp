@@ -7,8 +7,8 @@ import com.example.islamiapp.R
 import com.example.islamiapp.databinding.ActivityHomeBinding
 import com.example.islamiapp.home.screens.hadeth.AhadethFragment
 import com.example.islamiapp.home.screens.quran.QuranFragment
-import com.example.islamiapp.home.screens.RadioFragment
-import com.example.islamiapp.home.screens.TasbeehFragment
+import com.example.islamiapp.home.screens.radio.RadioFragment
+import com.example.islamiapp.home.screens.tasbeeh.TasbeehFragment
 
 class HomeActivity : AppCompatActivity() {
     lateinit var binding: ActivityHomeBinding

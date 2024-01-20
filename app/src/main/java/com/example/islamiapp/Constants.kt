@@ -5,7 +5,6 @@ object Constants {
     val ALHAMDULELLAH = "الحمدلله"
     val LA_ELLAH_ELA_ALLAH = "لا اله الا الله"
     val ALLAH_AKBAR = "الله اكبر"
-    val SURAT_AL_BAQARA = "البقرة"
     val HADEETH_NUMBER = "الحديث رقم "
     val SURAHS_NAMES = listOf(
         "الفاتحه",
@@ -242,4 +241,5 @@ object Constants {
     val QURAN = "quran"
     val FILE_NAME = "file_name"
     val SURA = "سورة "
+    val HADEETH = "hadeeth"
 }

@@ -1,4 +1,4 @@
-package com.example.islamiapp.home.screens
+package com.example.islamiapp.home.screens.tasbeeh
 
 import android.opengl.Matrix
 import android.os.Bundle

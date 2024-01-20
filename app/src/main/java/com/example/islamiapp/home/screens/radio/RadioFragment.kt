@@ -1,4 +1,4 @@
-package com.example.islamiapp.home.screens
+package com.example.islamiapp.home.screens.radio
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

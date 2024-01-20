@@ -32,10 +32,10 @@
         android:layout_height="72dp"
         android:background="?background"
         app:itemIconSize="50dp"
-        app:itemPaddingTop="0dp"
-        app:itemTextColor="@color/nav_bottom_colors"
         app:itemIconTint="@color/nav_bottom_colors"
+        app:itemPaddingTop="0dp"
         app:itemRippleColor="@color/nav_bottom_colors"
+        app:itemTextColor="@color/nav_bottom_colors"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/bottom_nav_menu" />
 

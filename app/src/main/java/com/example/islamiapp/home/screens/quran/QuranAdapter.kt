@@ -33,6 +33,6 @@ class QuranAdapter(val quranList: ArrayList<Quran>) :
     }
 
     interface OnQuranClick {
-        fun onQuranClick(quran:Quran, index:Int)
+        fun onQuranClick(quran: Quran, index: Int)
     }
 }

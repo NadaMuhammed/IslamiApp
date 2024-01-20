@@ -33,8 +33,8 @@ class QuranFragment : Fragment() {
         quranAdapter.onQuranClick = object : QuranAdapter.OnQuranClick {
             override fun onQuranClick(quran: Quran, index: Int) {
                 val intent = Intent(activity, QuranDetailsActivity::class.java)
-                intent.putExtra(Constants.QURAN,quran)
-                intent.putExtra(Constants.FILE_NAME,"${index+1}.txt")
+                intent.putExtra(Constants.QURAN, quran)
+                intent.putExtra(Constants.FILE_NAME, "${index + 1}.txt")
                 startActivity(intent)
             }
         }
@@ -42,8 +42,13 @@ class QuranFragment : Fragment() {
     }
 
     fun fillLists() {
-        for (sura in 0..<Constants.SURAHS_NAMES.size){
-            quranArrayList.add(Quran(Constants.SURAHS_NAMES.get(sura), Constants.AYAT_NUMBERS.get(sura)))
+        for (sura in 0..<Constants.SURAHS_NAMES.size) {
+            quranArrayList.add(
+                Quran(
+                    Constants.SURAHS_NAMES.get(sura),
+                    Constants.AYAT_NUMBERS.get(sura)
+                )
+            )
         }
 
     }

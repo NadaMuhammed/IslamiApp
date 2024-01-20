@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home.screens.TasbeehFragment">
+    tools:context=".home.screens.tasbeeh.TasbeehFragment">
 
     <ImageView
         android:id="@+id/sebhaImv"
@@ -23,9 +23,9 @@
         android:layout_marginTop="43dp"
         android:fontFamily="@font/elmessiri"
         android:text="@string/number_of_tsbehat"
+        android:textColor="@color/home_text_color"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:textColor="@color/home_text_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sebhaImv" />
@@ -39,8 +39,8 @@
         android:backgroundTint="?android:statusBarColor"
         android:padding="22dp"
         android:text="@string/primary_tasbeehat_counter"
-        android:textSize="25sp"
         android:textColor="@color/home_text_color"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tsbehatTv" />

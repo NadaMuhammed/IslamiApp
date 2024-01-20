@@ -12,12 +12,12 @@
         tools:layout="@layout/fragment_quran" />
     <fragment
         android:id="@+id/tasbeehFragment"
-        android:name="com.example.islamiapp.home.screens.TasbeehFragment"
+        android:name="com.example.islamiapp.home.screens.tasbeeh.TasbeehFragment"
         android:label="fragment_tasbeeh"
         tools:layout="@layout/fragment_tasbeeh" />
     <fragment
         android:id="@+id/radioFragmentItem"
-        android:name="com.example.islamiapp.home.screens.RadioFragment"
+        android:name="com.example.islamiapp.home.screens.radio.RadioFragment"
         android:label="fragment_radio"
         tools:layout="@layout/fragment_radio" />
     <fragment
