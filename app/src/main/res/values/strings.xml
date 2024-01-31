@@ -14,4 +14,10 @@
     <string name="holy_quran_radio">إذاعة القرآن الكريم</string>
     <string name="the_ahadeth">الأحاديث</string>
     <string name="primary_tasbeehat_counter">0</string>
+    <array name="azkar_list">
+        <item>سبحان الله</item>
+        <item>الحمد لله</item>
+        <item>لا اله الا الله</item>
+        <item>الله اكبر</item>
+    </array>
 </resources>

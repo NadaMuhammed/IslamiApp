@@ -2,13 +2,11 @@ package com.example.islamiapp.home.screens.quran
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.example.islamiapp.Constants
-import com.example.islamiapp.R
 import com.example.islamiapp.databinding.FragmentQuranBinding
 
 class QuranFragment : Fragment() {
@@ -38,7 +36,6 @@ class QuranFragment : Fragment() {
                 startActivity(intent)
             }
         }
-
     }
 
     fun fillLists() {

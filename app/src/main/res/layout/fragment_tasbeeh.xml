@@ -8,9 +8,9 @@
 
     <ImageView
         android:id="@+id/sebhaImv"
-        android:layout_width="230dp"
-        android:layout_height="230dp"
-        android:layout_marginTop="80dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="60dp"
         android:src="@drawable/sebha_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

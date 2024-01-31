@@ -1,21 +1,19 @@
 package com.example.islamiapp.home.screens.tasbeeh
 
-import android.opengl.Matrix
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import com.example.islamiapp.Constants
+import androidx.fragment.app.Fragment
 import com.example.islamiapp.R
 import com.example.islamiapp.databinding.FragmentTasbeehBinding
 
 class TasbeehFragment : Fragment() {
     lateinit var binding: FragmentTasbeehBinding
     var tasbeehCnt: Int = 0
-    var tasbeehCompleted = 1
     var angleCnt = 10f
+    var azkarList = mutableListOf<String>()
+    var currentDhikrIndex = 0
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -27,20 +25,24 @@ class TasbeehFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        azkarList = resources.getStringArray(R.array.azkar_list).toMutableList()
         tasbeehCnt = 0
         angleCnt = 10f
-        tasbeehCompleted = 1
         binding.tasbeehBtn.setOnClickListener {
             addCounter()
+            rotateSebha(angleCnt)
         }
     }
 
     fun addCounter() {
-        tasbeehCnt++
-        binding.tsbehatCountTv.text = tasbeehCnt.toString()
-        rotateSebha(angleCnt)
-        if (tasbeehCnt % 30 == 0)
+        if (tasbeehCnt == 30) {
             changeTasbeeh()
+            tasbeehCnt = 0
+        } else
+            tasbeehCnt++
+
+        binding.tsbehatCountTv.text = tasbeehCnt.toString()
+
     }
 
     fun rotateSebha(angle: Float) {
@@ -49,27 +51,8 @@ class TasbeehFragment : Fragment() {
     }
 
     private fun changeTasbeeh() {
-        when (tasbeehCompleted) {
-            1 -> {
-                tasbeehCompleted++
-                binding.tasbeehBtn.text = Constants.ALHAMDULELLAH
-            }
-
-            2 -> {
-                tasbeehCompleted++
-                binding.tasbeehBtn.text = Constants.LA_ELLAH_ELA_ALLAH
-            }
-
-            3 -> {
-                tasbeehCompleted++
-                binding.tasbeehBtn.text = Constants.ALLAH_AKBAR
-            }
-
-            4 -> {
-                tasbeehCompleted = 1
-                binding.tasbeehBtn.text = Constants.SOBHAN_ALLAH
-            }
-        }
+        currentDhikrIndex = if (currentDhikrIndex < azkarList.size) ++currentDhikrIndex else 0
+        binding.tasbeehBtn.text = azkarList[currentDhikrIndex]
     }
 
 
