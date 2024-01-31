@@ -38,9 +38,9 @@ class TasbeehFragment : Fragment() {
         if (tasbeehCnt == 30) {
             changeTasbeeh()
             tasbeehCnt = 0
-        } else
+        } else {
             tasbeehCnt++
-
+        }
         binding.tsbehatCountTv.text = tasbeehCnt.toString()
 
     }
@@ -51,7 +51,7 @@ class TasbeehFragment : Fragment() {
     }
 
     private fun changeTasbeeh() {
-        currentDhikrIndex = if (currentDhikrIndex < azkarList.size) ++currentDhikrIndex else 0
+        currentDhikrIndex = if (currentDhikrIndex < azkarList.size - 1) ++currentDhikrIndex else 0
         binding.tasbeehBtn.text = azkarList[currentDhikrIndex]
     }
 
