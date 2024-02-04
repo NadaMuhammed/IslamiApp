@@ -4,6 +4,7 @@ An Islamic application that contains a splash screen and 4 home screens. First s
 * Kotlin
 * Activities
 * Fragments
+* View Binding
 * RecyclerView
 * Buffer Reader and Input Stream Reader to read from files
 * Constraint layout
