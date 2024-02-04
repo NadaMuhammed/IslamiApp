@@ -9,4 +9,5 @@ An Islamic application that contains a splash screen and 4 home screens. First s
 * Buffer Reader and Input Stream Reader to read from files
 * Constraint layout
 # UI
-![Screenshot 2024-01-20 191404](https://github.com/NadaMuhammed/IslamiApp/assets/93039383/db33536c-477b-48d2-8aa1-8b49d3928338)
+![Islami](https://github.com/NadaMuhammed/IslamiApp/assets/93039383/52440203-65f0-4ecc-9e74-473964df21db)
+
